@@ -1,2 +1,2 @@
 # Redis
-<b>Note: In this project we have used Redis as a Message broker (using Redis Pub/Sub Channels) plus also implemented Redis Keyspace Notifications (it uses Pub/Sub mechanism).</b>
+<b>Note: In this project we have used Redis as a Message broker (using Redis Pub/Sub Channels). Here Redis is a pure synchronous messaging broker b/c the message is not stored, published messages evaporate, regardless if there was any subscriber, so all parties need to be active at the same time to be able to communicate while RabbitMQ is used for asynchronous communication, i.e it was asynchronous message broker where messages are stored in queues until consumers get active. Plus in this project we have also implemented Redis Keyspace Notifications (it uses Pub/Sub mechanism).</b>
